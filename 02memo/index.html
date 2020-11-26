@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>申込書</title>
+
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<div class="main">
+    <div class="form1">
+        <header class="form1_header">
+            <h1 class="form1_title">申込項目</h1>
+        </header>
+        <form class="form1_list" name="myform" onsubmit="return Check()">
+            <p id="title_name">氏名</p>
+            <input type="text" class="form1_text" id="name" placeholder="氏名" name="Name">
+
+            <p id="birthday">生年月日</p>
+            <div class="select">
+                <select id="year" class="form1_text a" placeholder="年"></select>
+                <select type="text" class="form1_text b" id="month" placeholder="月"></select>
+                <select type="text" class="form1_text c" id="day" placeholder="日"></select>
+                </div>
+            
+            <p id="address">住所</p>    
+            <div class="select">
+                <input type="text" class="form1_text a" id="capital"  placeholder="都道府県">
+                <input type="text" class="form1_text b" id="city"  placeholder="市区町村">
+                <input type="text" class="form1_text c" id="town"  placeholder="地名番地">
+            </div>
+            
+            <p id="title_tel">電話</p>    
+            <input type="text" class="form1_text" id="tel">
+            
+            <div id="title_company">
+                <p>勤務先</p>    
+                <input type="text" class="form1_text" id="company">
+            </div>
+
+            <div id="title_job">
+                <p>職種</p>    
+                <input type="text" class="form1_text" id="job">
+            </div>
+
+            <div id="title_jobyears">
+                <p>勤続年数</p>    
+                <input type="text" class="form1_text" id="jobyears">
+            </div>
+
+            <div id="title_income">
+                <p>年収</p>   
+                <input type="text" class="form1_text" id="income">
+            </div>
+            <input type="reset" name="reset" value="リセット" class="btn">
+        </form>
+        <button class="btn" id="save">保存</button>
+        
+        
+
+    </div>
+
+    <div class="form2">
+        <header class="form2_header">
+            <h1 class="form2_title">申込内容</h1>
+        </header>
+        <div class="form">
+            <div class="list_title">
+                <ul>
+                    <li>氏名</li>
+                    <li>生年</li>
+                    <li>月</li>
+                    <li>日</li>
+                    <li>住所/都道府県</li>
+                    <li>市区町村</li>
+                    <li>地名地番</li>
+                    <li>電話</li>
+                    <li>勤務先</li>
+                    <li>職種</li>
+                    <li>勤続年数</li>
+                    <li>年収</li>
+                </ul>
+            </div>
+            <div class="form_item" id="formlist"></div>
+        </div>
+        <div class="form2_btn">
+            <button class="btn" id="delete">消去</button>
+            <button class="btn" id="send">送信</button>
+        </div>
+        
+    </div>
+</div>
+<div class="fin">
+    <p class="fin_item">申し込み完了</p>
+</div>
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/a.js"></script>
+
+</body>
+</html>

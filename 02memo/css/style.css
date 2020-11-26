@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+
+    src:
+    local("Noto Sans CJK JP")
+    url(//.font.gstatic.com/ea/notsansjp/v5/NotoSansJP-Reegular.woff2)format('woff2'),
+    url(//.font.gstatic.com/ea/notsansjp/v5/NotoSansJP-Reegular.woff)format('woff'),
+    url(//.font.gstatic.com/ea/notsansjp/v5/NotoSansJP-Reegular.otf)format('opentype');
+}
+
+html{
+    font-size:62.5%; /*16px×62.5％＝10px*/
+
+}
+
+body{
+    color: #333;
+    font-size: 1.6rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-feature-settings: "palt";
+    letter-spacing: 0.2em;
+/*	line-height: 0;*/
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.main{
+    display: flex;
+}
+
+/*********************
+form1
+*********************/
+.form1{
+    width: 650px;
+    height: auto;
+    padding: 0 150px;
+}
+.form1_header{
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+.form1_title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+.form1_list{
+    line-height: 1.6rem;
+}
+.form1_text{
+    box-sizing: border-box;
+    width: 100%;
+    margin:10px 0 20px;
+    padding: 3px 10px;
+    font-size: 1.6rem;
+    border-radius: 5px;
+}
+.select{
+    display: flex;
+}
+.form1_text.a{
+    width: 30%;
+    margin-right: 5%;
+}
+.form1_text.b{
+    width: 30%;
+    margin-right: 5%;
+}
+.form1_text.c{
+    width: 30%;
+}
+
+.form1_btn{
+    display: flex;
+    width: 250px;
+    margin: 0 0 100px auto;
+    justify-content: space-between;
+}
+.btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*********************
+form2
+*********************/
+.form2{
+    width: 480px;
+}
+.form2_header{
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+.form2_title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+.form{
+    display: flex;
+}
+.list_title{
+    width: 210px;
+    text-align: right;
+    padding: 10px;
+    line-height: 2.5rem;
+    font-weight: bold;
+    
+}
+.form_item{
+    width: 210px;
+    color: #333;
+    line-height: 2.5rem;
+    padding: 10px;
+}
+
+.form2_btn{
+    width: 250px;
+    margin: 30px auto ;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*********************
+fin
+*********************/
+.fin{
+    display: none;
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    text-align: center;
+}
+.fin_item{
+    font-size: 5.0rem;
+    padding-top: 300px;
+}
